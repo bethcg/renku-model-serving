@@ -1,0 +1,10 @@
+# Web serving
+fastapi==0.141.1
+uvicorn[standard]==0.34.0
+pydantic==2.9.2
+
+# Hugging Face model inference (CPU). torch is the heavy dependency; the build
+# will take a few minutes. To pin a smaller footprint, use a CPU-only torch
+# wheel or swap in a lighter model via the MODEL_ID env var.
+transformers==4.44.2
+torch==2.4.1
